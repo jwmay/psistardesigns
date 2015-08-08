@@ -1,0 +1,68 @@
+//
+// Front Page
+// -----------------------------------------------
+
+
+@page-width:	330px;
+
+
+.container {
+	// Account for left/right padding of 15px
+	width: (@page-width + 30);
+}
+
+.content {
+	.make-xs-column(12);
+}
+
+.site-title {
+	margin-top: 6rem;
+	margin-bottom: 3rem;
+	text-align: center;
+	font-size: 5.4rem;
+}
+
+.site-about {
+	font-size: 1.8rem;
+}
+
+.site-portfolio {
+
+	.portfolio-header {
+		margin-top: 4rem;
+		margin-bottom: 1.5rem;
+		text-align: center;
+		font-size: 4.5rem;
+	}
+
+	.site {
+		margin-bottom: 3rem;
+		padding-bottom: 1.2rem;
+		border-bottom: 1px solid @gray-lighter;
+		
+		.img-wrapper {
+			width: @page-width;
+			height: 247.5px;
+			margin-bottom: 1.2rem;
+			overflow: hidden;
+					
+			img {
+				transition: all 0.4s ease-in-out;
+				transform: scale(1,1);
+				
+				&:hover,
+				&:focus {
+					transform: scale(1.1,1.1);
+				}
+			}
+		}
+		
+		.title {
+			font-size: 2.4rem;
+		}
+		
+		.caption {
+			font-size: 1.6rem;
+		}
+	}
+}
